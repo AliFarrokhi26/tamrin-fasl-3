@@ -14,7 +14,7 @@
     <header>
         <div class="navbar">
             <div class="navbar-container">
-                <div class="logo-menu">
+                <div class="logo-menu cursor-pointer">
                     <i class="fa-solid fa-bars fa-2x"></i>
                     <div class="logo-box">
                         <img src="https://www.youtube.com/s/desktop/4feff1e2/img/favicon_32x32.png">
@@ -24,26 +24,62 @@
                 <div class="search-voice">
                     <div class="search-box">
                         <input type="text" placeholder="Search">
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="cursor-pointer"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
-                    <button class="custom-b"><i class="fa-solid fa-microphone"></i></button>
+                    <button class="custom-b cursor-pointer"><i class="fa-solid fa-microphone"></i></button>
                 </div>
                 <div class="live-notif-account">
-                    <div class="live-complex">
+                    <div class="live-complex cursor-pointer">
                         <i class="fa-solid fa-video fa-2x"></i>
                         <i class="fa-solid fa-plus "></i>
                     </div>
-                    <div class="notif-badge">
+                    <div class="notif-badge cursor-pointer">
                         <i class="fa-regular fa-bell fa-shake fa-2x"></i>
                         <span>+6</span>
                     </div>
-                    <div class="account-logo">
+                    <div class="account-logo cursor-pointer">
                         <h1>G</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <main>
+        <div class="main-container">
+            <div class="video-everything">
+                <div class="video">
+                    <iframe src="https://youtu.be/44A9Wu-1sAg"></iframe>
+                </div>
+                <div class="name-title-channel">
+                    <h1>React 18 - useTransition and startTransition</h1>
+                    <div class="channel-info">
+                        <div class="name-sub">
+                            <div class="channel">
+                                <img src="https://yt3.ggpht.com/jGJsCvaT4WSkI7hbTfYGPE81RLP2tGnymohGwqcZmf8OjKxwryTVvosnZuCgAiwfsOJuABTz=s48-c-k-c0x00ffffff-no-rj"
+                                    alt="">
+                                <div class="channel-name">
+                                    <h3>PersiaJS</h3>
+                                    <p>400 subscriber</p>
+                                </div>
+                                <button class="sub-button">subscribe</button>
+                            </div>
+                        </div>
+                        <div class="more-option">
+                            <div class="like-dislike">
+                                <button class="like"><i class="fa-solid fa-thumbs-up"></i><span>6</span></button>
+                                <button class="dislike"><i class="fa-solid fa-thumbs-down fa-flip-horizontal"></i> <span>|</span></button>
+                            </div>
+                            <button class="share"><i class="fa-solid fa-share"></i> share</button>
+                            <button class="download"><i class="fa-solid fa-download"></i> Download</button>
+                            <button class="clip"><i class="fa-solid fa-scissors"></i> Clip</button>
+                            <button class="three-dots"><i class="fa-solid fa-ellipsis"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="description"></div>
+                <div class="comments"></div>
+            </div>
+            <div class="side-video"></div>
+        </div>
+    </main>
 </body>
-
-</html>
