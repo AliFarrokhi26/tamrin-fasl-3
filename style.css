@@ -70,6 +70,7 @@ border: 1px solid gray;
 }
 .custom-b {
     color: white;
+    margin-left: 5px;
 width: 40px;
 border-radius: 45px;
 background-color: hsl(0, 0%, 18.82%);
@@ -180,10 +181,14 @@ iframe{
     flex-direction: column;
     justify-content: center;
     margin-right: 15px;
+    
 }
 .channel-name h3{
     font-size: 15px;
-    
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 .channel-name p{
     font-size: 15px;
@@ -219,7 +224,7 @@ iframe{
 }
 .like span{
     position: absolute;
-    left: 35px;
+    left: 31px;
 }
 
 .dislike{
@@ -229,7 +234,7 @@ iframe{
 }
 .dislike span{
     position: absolute;
-    left: 5px;
+    left: -2px;
 }
 .share{
     padding:  15px;
@@ -250,6 +255,11 @@ iframe{
     padding: 12px 12px;
     border: none;
     border-radius: 25px;
+}
+.highlight-btn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .2);
+
 }
 /* ?---------------------Description------------------ */
 .description{
@@ -298,6 +308,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 10px;
+margin:25px 0;
 /* border: 1px solid white; */
 
 }
@@ -307,6 +318,10 @@ gap: 10px;
     border-radius: 8px;
     color: white;
     background-color: #2E2E2E;
+    &:hover{
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, .2);
+    }
 }
 .card{
     width: 100%;
@@ -314,6 +329,11 @@ gap: 10px;
     display: flex;
     gap: 15px;
     /* border: 1px dotted white; */
+    &:hover{
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, .1);
+    }
 }
 .video-preview{
     height: 100%;
