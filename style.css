@@ -355,6 +355,113 @@ gap: 10px;
 
 }
 
+/* ?------------------------comments------------------ */
+.comment-counter-sortby{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.sortby{
+    display: flex;
+    gap: 5px;
+    padding:10px 15px;
+    border-radius: 25px;
+    /* background-color: red; */
+    &:hover{
+        background-color: gray;
+        cursor: pointer;
+    }
+}
+.add-a-comment{
+    /* height: 1500px; */
+    /* border: 5px solid yellow; */
+}
+.comment-complex{
+    /* border: 1px solid white; */
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    /* gap: 15px; */
+}
+.comment-pic-container {
+    width: 5%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    /* border: 1px dotted white; */
+}
+.comment-pic-container p{
+    /* width: 15%; */
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    /* width: 50px; */
+    /* height: 50px; */
+    border-radius: 50%;
+    text-align: center;
+    /* vertical-align: center; */
+    background-color: red;
+}
+.comment-text-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    
+    justify-self: stretch;
+}
+.comment-text-container input{
+    width: 100%;
+    border: none;
+    margin: 15px 0;
+    padding: 15px 0;
+    background-color: #212121 ;
+    border-bottom: 1px solid gray;
+    /* box-shadow: 0 10px  5px gray; */
+    &::placeholder{
+        font-size: 15px;
+    }
+    &:focus{
+        outline: none;
+        border-bottom: 2px solid gray;
+    }
+
+
+}
+.comment-options{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.comment-options i{
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.comment-options i:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.comment-btn button{
+    border: none;
+    padding: 10px 15px;
+    background-color: #2E2E2E;
+    color: white;
+    border-radius: 25px;
+}
+
+.comment-btn button:first-child:hover{
+    cursor: pointer;
+    opacity: .8;
+
+}
+.comment-btn button:last-child{
+    opacity: .25;
+}
+
+
 
 
 
