@@ -5,10 +5,15 @@
 body{
     background-color: rgb(82, 82, 82);
     background-color: black;
+    background-color: #212121;
     /* background-color: #fff; */
 }
 .cursor-pointer{
     cursor: pointer;
+}
+h1,h2,h3,h4,h5,h6,p,button{
+    font-family: "Roboto",sans-serif;
+    /* font-style: normal; */
 }
 /* ?-------------------navbar---------------------- */
 .navbar{
@@ -19,7 +24,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    box-shadow: 0 0 25px gray;
+    box-shadow: 0 0 5px gray;
     /* border: 1px solid white; */
 }
 .logo-menu{
@@ -127,10 +132,12 @@ opacity: 70%;
 /* ?--------------------main container--------------------- */
 
 .main-container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     padding-left: 25px;
     margin-top: 15px;
+    display: flex;
+
     /* border: 1px solid red; */
     /* background-color: red; */
 }
@@ -140,10 +147,17 @@ opacity: 70%;
 iframe{
     width: 100%;
     height: 669px;
+    border: none;
+    border-radius: 20px;
 }
+
+/* ?--------------channel pic / channel name / channel sub-number ---------------- */
 .name-title-channel{
     color: white;
     /* border: 1px solid red; */
+}
+.name-title-channel h1{
+    font-size: 25px;
 }
 .channel-info{
     display: flex;
@@ -168,18 +182,21 @@ iframe{
     margin-right: 15px;
 }
 .channel-name h3{
-    font-size: 20px;
+    font-size: 15px;
     
 }
 .channel-name p{
     font-size: 15px;
+}
+.channel-name p:nth-child(2){
+    font-size: 12px;
 }
 .sub-button{
     padding: 0 20px;
     border: none;
     border-radius: 25px;
 }
-/* ---------- */
+/* ?-----------------more option on the left ==> like / dislike / share / download / clip / three dots---------------------- */
 .more-option{
     display: flex;
     align-items: center;
@@ -234,4 +251,110 @@ iframe{
     border: none;
     border-radius: 25px;
 }
+/* ?---------------------Description------------------ */
+.description{
+    width: 100%;
+    color: white;
+    padding: 15px 0;
+}
+.d-container{
+    /* background-color: #272727; */
+    background-color: #2E2E2E;
+    height: 100px;
+    border-radius: 25px;
+    padding: 10px 0 0 10px;
+}
+.d-container h4{
+    margin-bottom: 5px;
+}
+.d-container  p:nth-child(2){
+    /* color: red; */
+    margin-bottom: 25px;
+}
+.d-container  p:nth-child(3) span{
+    color: lightblue;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* ?--------------side video----------------- */
+.more-video{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.side-video{
+    width: 25%;
+    margin: 0 35px 0 25px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.filter-option{
+height: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+/* border: 1px solid white; */
+
+}
+.filter-btn{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #2E2E2E;
+}
+.card{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    gap: 15px;
+    /* border: 1px dotted white; */
+}
+.video-preview{
+    height: 100%;
+    position: relative;
+}
+.video-preview i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /* color: white;
+    opacity: 60%; */
+    color: rgba(255, 255, 255, .6);
+}
+.video-preview img{
+    width: 125px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.video-description{
+    color: white;
+}
+.video-description{
+    font-family: "Roboto",sans-serif;
+    font-style: normal;
+}
+.video-description h3{
+    margin-top: 3px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+.video-description p{
+    margin-top: 2px;
+    font-weight: 300;
+    font-size: 12px;
+
+}
+
+
+
 
